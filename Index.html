@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
     <div class="wrapper">
@@ -79,9 +80,9 @@
             <div id="simple" class="tabcontent">
             </div>
             <div class="tablist">
-                <button class="tablink" onclick="openEl('smart','smart1', this,'blue')" id="defaultOpen">Smart Designe</button>
+                <button class="tablink"  onclick="openEl('smart','smart1','a1', this,'blue')" id="defaultOpen">Smart Designe</button>
                 <div class="br"></div>
-                <button class="tablink" onclick="openEl('simple','simple1', this,'blue')">Simple o use</button>
+                <button class="tablink" onclick="openEl('simple','simple1','a2', this,'blue')" id="hr">Simple o use</button>
                 <div class="bttab">
                     <div id="smart1" class="tabcontent1">
                         The wires of old are gone, so you’re never tied to a single location, device, or your desk.
@@ -92,9 +93,10 @@
                 </div>
 
             </div>
-
-
-
+        </div>
+        <div class="pag">
+            <a id="a1" class="pags " onclick="openEl('smart','smart1','a1', this,'blue')" href="#"></a>
+            <a id="a2" class="pags " onclick="openEl('simple','simple1','a2', this,'blue')" href="#"></a>
         </div>
 
 
@@ -102,6 +104,7 @@
 
 
     </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript"  src="js/my js.js"></script>
 </body>
 </html>
